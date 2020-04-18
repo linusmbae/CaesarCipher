@@ -4,8 +4,14 @@ import static org.junit.Assert.*;
 
 public class CaesarCipherEncryptTest {
     @Test
-    public void encryptData_whenEncrypted_true() {
-        CaesarCipher testEncryption=new CaesarCipher("encrypt", 4);
-        assertEquals(true,testEncryption instanceof CaesarCipher);
+    public void encryptData_instantiatesCorrectly_true() {
+        CaesarCipher testCaesarCipher=new CaesarCipher("encrypt", 4);
+        assertEquals(true,testCaesarCipher instanceof CaesarCipher);
+    }
+
+    @Test
+    public void encryptData_testMessage() {
+        CaesarCipher testCaesarCipher=new CaesarCipher("encrypt", 4);
+        assertEquals("irgvctx", testCaesarCipher.isEqual());
     }
 }
