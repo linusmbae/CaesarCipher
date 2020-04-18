@@ -5,8 +5,6 @@ public class CaesarCipher {
     public CaesarCipher(String encryptMessage, int jump) {
 
     }
-
-
     public String isEqual() {
         return "irgvctx";
     }
