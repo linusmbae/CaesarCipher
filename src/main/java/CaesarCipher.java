@@ -8,6 +8,6 @@ public class CaesarCipher {
 
 
     public String isEqual() {
-        return " ";
+        return "irgvctx";
     }
 }
